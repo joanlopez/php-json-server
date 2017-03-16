@@ -1,0 +1,15 @@
+{
+	"name": "joanlopez/json-server",
+    "description": "Yet another PHP json-server implementation",
+    "keywords": ["json", "server"],
+    "homepage": "https://github.com/joanlopez/php-json-server",
+    "license": "MIT",
+	"require-dev": {
+        "phpunit/phpunit": "^5.0"
+	},
+	"autoload": {
+        "psr-0": {
+            "JsonServer": "src/"
+        }
+	}
+}
