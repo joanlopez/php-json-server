@@ -8,4 +8,5 @@ php:
 script:
   - php composer.phar self-update
   - php composer.phar install --dev
-  - ./vendor/bin/phpunit
+  - ./vendor/bin/phpunit --testsuite unit
+  - ./vendor/bin/phpunit --testsuite integration
