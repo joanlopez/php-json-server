@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <phpunit bootstrap="./vendor/autoload.php">
+    <filter>
+        <whitelist
+                addUncoveredFilesFromWhitelist="true"
+                processUncoveredFilesFromWhitelist="true">
+
+            <directory suffix=".php">./src/</directory>
+        </whitelist>
+    </filter>
+
     <testsuites>
         <testsuite name="unit">
             <directory>./tests/JsonServer/unit</directory>
