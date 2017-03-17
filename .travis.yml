@@ -10,3 +10,10 @@ script:
   - php composer.phar install --dev
   - ./vendor/bin/phpunit --testsuite unit
   - ./vendor/bin/phpunit --testsuite integration
+
+addons:
+  code_climate:
+    repo_token: 0f5ce023260e7df34832da09aba27723bcc7244ccefb87bbff4fe9d3704c68d3
+
+after_success:
+  - vendor/bin/test-reporter
